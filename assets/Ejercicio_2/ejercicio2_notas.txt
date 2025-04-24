@@ -1,0 +1,16 @@
+
+
+Terminal 1 // abrir simulador 
+ignacio@Ignacio-Ubuntu:~/Examen_2_robotica$ asd
+ignacio@Ignacio-Ubuntu:~/Examen_2_robotica$ ros2 launch moveit2_tutorials demo.launch.py 
+
+
+Terminal 2// EJecutar programa de menu 
+
+ignacio@Ignacio-Ubuntu:~/Examen_2_robotica$ asd
+ignacio@Ignacio-Ubuntu:~/Examen_2_robotica$ ros2 run sim_moveit inv 
+
+
+
+
+

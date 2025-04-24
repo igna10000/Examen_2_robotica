@@ -1,0 +1,19 @@
+ros2 launch moveit2_tutorials demo.launch.py rviz_config:=panda_moveit_config_demo_empty.rviz
+
+
+ros2 launch moveit2_tutorials mtc_demo.launch.py
+ros2 launch moveit2_tutorials pick_place_demo.launch.py
+
+
+ros2 launch moveit2_tutorials demo.launch.py
+ros2 run hello_moveit hello_moveit
+
+
+ros2 pkg create \
+ --build-type ament_cmake \
+ --dependencies moveit_ros_planning_interface rclcpp \
+ --node-name hello_moveit hello_moveit
+ 
+ 
+ colcon build --packages-select sim_moveit
+

@@ -1,0 +1,22 @@
+cd Examen_2_robotica/    terminal 1 para iniciar simulador 
+ 
+asd
+
+ros2 launch stage_ros2 stage.launch.py world:=ej3 enforce_prefixes:=false one_tf_tree:=true
+
+ 
+ 
+ 
+ Terminal 2  para iniciar el mapeo 
+ asd 
+ ros2 launch navigation_tb3 mapping.launch.py 
+
+
+Terminal 3 para visualizar el mapeo 
+rviz2  
+
+
+
+terminal 4 para controlar al robot 
+ros2 run teleop_twist_keyboard teleop_twist_keyboard 
+ 
